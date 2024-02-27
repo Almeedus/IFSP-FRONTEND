@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Meus Pedidos</h1>
+        <ul>
+            <li>
+                <a href="#my_datas">
+                    Meus Dados
+                </a>
+            </li>
+            <li>
+                <a href="#my_purchase">
+                    Minhas Compras
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Avaliar Produto
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section>
+        <h1 id="my_datas">Meus Dados</h1>
+        <form>
+            <fieldset>
+                <legend>Dados da Conta</legend>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="ex: seuemail@gmail.com"><br>
+                <input type="checkbox" id="promotion" name="promotion">
+                <label for="promotion">Quero receber emails promocionais</label><br>
+                <label for="password">Senha:</label><br>
+                <input type="text" id="password" name="password"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name" placeholder="ex: João da Silva"><br><br>
+                <label for="surname">Como gostaria que a gente te chamasse? (opcional)</label><br>
+                <input type="text" id="surname" name="surname" placeholder="ex: Jãozin"><br>
+            </fieldset>
+            <button type="save">Salvar Alterações</button>
+        </form>
+    </section>
+    <section>
+        <h1 id="my_purchase">Minhas compras</h1>
+        <fieldset id="purchase">
+            <div>
+                Numero de Pedido
+            </div>
+        </fieldset>
+    </section>
+    <section>
+
+    </section>
+</body>
+</html>
