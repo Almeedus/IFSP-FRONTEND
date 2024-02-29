@@ -1,0 +1,37 @@
+body {
+    height: 100%;
+    margin: 100px;
+    background-color: rgb(235, 235, 235);
+}
+
+p {
+    text-align: justify;
+}
+
+#me {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: -70px;
+}
+
+#me h1 h2 {
+    align-self: center;
+    margin-left: 100px;
+}
+
+#container {
+    margin-left: 50px;
+}
+
+#me img {
+    margin-left: 200px;
+}
+
+#time {
+    color: blue;
+}
+
+#escolas {
+    display: grid;
+    grid-template-columns: auto auto;
+}
