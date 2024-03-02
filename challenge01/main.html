@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#avaliar_produto">
                     Avaliar Produto
                 </a>
             </li>
@@ -52,13 +52,176 @@
     <section>
         <h1 id="my_purchase">Minhas compras</h1>
         <fieldset id="purchase">
-            <div>
-                Numero de Pedido
+            <div id="purchase_header"">
+                <p>Numero de Pedido</p>
+                <p>Status</p>
+                <p>Data</p>
+                <p>Forma de pagamento</p>
+                <p>Acompanhamento</p>
+            </div>
+            <div id="purchase_datas">
+                <p>#37945982</p>
+                <p>Concluído</p>
+                <p>12/12/2020</p>
+                <p>Cartão de crédito</p>
+                <button class="botao-abrir-modal">Rastreio detalhado</button>
+
+                <!-- O modal -->
+                <div class="modal">
+                    <div class="modal-conteudo">
+                        <h2>Rastreio detalhado</h2>
+                        <p>Seu pedido foi entregue com sucesso!</p>
+                        <p>Entregue por: GFL</p>
+                        <p>Código de rastreio: 123456789</p>
+                        <p>Entregue em 12/12/2020</p>
+                        <button class="fechar-modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset id="product">
+            <div id="img">
+                <img src="" alt="Imagem do produto" width="100" height="70">
+            </div>
+            <div id="product_info">
+                <p>
+                    <strong>
+                        Suporte Articulado para Monitor de Notebook de 13 a 32 Vinik, Articulação Dupla - SMN500
+                    </strong>
+                </p>
+                <p>
+                    Quantidade: 1
+                </p>
+                <p>
+                    <a href="#avaliar_produto">
+                        Avaliar produto
+                    </a>
+                </p>
+            </div>
+            <div id="price">
+                <p>
+                    R$
+                </p>
+                <p>
+                    99,90
+                </p>
             </div>
         </fieldset>
     </section>
     <section>
-
+        <details>
+            <summary>Detalhes do pagamento e envio</summary>
+            <div id="header_info_purchase_shipping">
+                <p>
+                    <strong>Endereço de entrega</strong>
+                </p>
+                <p>
+                    <strong>Forma de pagamento</strong>
+                </p>
+                <p>
+                    <strong>Frete</strong>
+                </p>
+            </div>
+            <div id="infos_purchase_shipping">
+                <p>Avenida Estelita Falcão, Número 12, Centro</p>
+                <p>Cartão de crédito Master Card **** **** **** 1234 Titular: João da Silva</p>
+                <p>
+                    R$ 15,52 Enviado por 
+                    <strong>GLF</strong> 
+                    Entregue
+                </p>
+            </div>
+        </details>
     </section>
+    <hr>
+    <section>
+        <h1 id="avaliar_produto"> 
+            Avaliação do produto
+        </h1>
+        <fieldset>
+            <legend>Opnião Sobre o Produto</legend>
+            <p>
+                <strong>Qual cor mais te agrada?</strong>
+            </p>
+            <div id="color_select">
+                <label for="cor">Escolha uma cor:</label>
+                <input type="color" id="cor" name="cor" value="#000000">
+            </div>
+            <p>
+                <strong>
+                    O produto é de qualidade?
+                </strong>
+            </p>
+            <form>
+                <label>
+                    <input type="radio" name="choice1" value="concordo_totalmente"> Concordo Totalmente
+                </label><br>
+                <label>
+                    <input type="radio" name="choice1" value="concordo"> Concordo
+                </label><br>
+                <label>
+                    <input type="radio" name="choice1" value="nao_estou_decidido"> Não Estou Decidido
+                </label><br>
+                <label>
+                    <input type="radio" name="choice1" value="discordo"> Discordo
+                </label><br>
+                <label>
+                    <input type="radio" name="choice1" value="discordo_totalmente"> Discordo Totalmente
+                </label><br>
+            </form>
+            <p>
+                <strong>
+                    Para você, quais parâmetros são mais importantes na qualidade do produto?
+                </strong>
+            </p>
+            <form>
+                <label>
+                    <input type="checkbox" name="durabilidade"> Durabilidade
+                </label><br>
+                <label>
+                    <input type="checkbox" name="features"> Características acessórias ou features
+                </label><br>
+                <label>
+                    <input type="checkbox" name="confiabilidade"> Confiabilidade
+                </label><br>
+                <label>
+                    <input type="checkbox" name="aparencia"> Aparência
+                </label><br>
+            </form>
+            <p>
+                <strong>
+                    Descreva a característica que mais chamou sua atenção no produto
+                </strong>
+            </p>
+            <input type="text" size="20">
+        </fieldset>
+        <fieldset>
+            <legend>Condições Atuais</legend>
+            <p>
+                <strong>
+                    Adicione uma foto atual do produto
+                </strong>
+            </p>
+            <form action="/enviar" method="post" enctype="multipart/form-data">
+                <input type="file" id="anexo" name="anexo">
+            </form>
+            <p>
+                <strong>
+                    Data de compra
+                </strong>
+            </p>
+            <label for="data">Selecione uma data:</label><br>
+            <input type="date" id="data" name="data">
+            <p>
+                <strong>
+                    Deixe um comentário sobre as condições do produto
+                </strong>
+            </p>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+        </fieldset>
+    </section>
+    <br>
+    <button type="submit">Enviar Avaliação</button>
 </body>
 </html>

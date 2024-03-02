@@ -1,3 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
 form {
     border: 3px;
+}
+
+
+#purchase_header {
+    display: flex;
+}
+
+#purchase_header p {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#purchase_datas {
+    display: flex;
+}
+
+#purchase_datas p {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#product {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#header_info_purchase_shipping {
+    display: flex;
+}
+
+#header_info_purchase_shipping p {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#infos_purchase_shipping {
+    display: flex;
+}
+
+#infos_purchase_shipping p {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+ /*Modal do rastreio*/
+ .modal {
+    display: none; /* Por padrão, o modal está oculto */
+    position: fixed; /* Permanece fixo na tela */
+    z-index: 1; /* Posicionado acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Fundo semi-transparente */
+    overflow: auto; /* Adiciona barra de rolagem quando necessário */
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-conteudo {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza o modal verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Quando o botão é clicado, exibe o modal */
+.botao-abrir-modal:focus + .modal {
+    display: block;
 }
