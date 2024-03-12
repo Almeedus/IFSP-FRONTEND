@@ -1,0 +1,30 @@
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.content {
+    border: 2px solid rgb(221, 221, 221);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.content img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text_content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}

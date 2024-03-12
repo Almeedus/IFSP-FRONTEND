@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+    height: 40px;
+    align-items: center;
+    padding: 10px;
+}
+
+.routes {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+}
+
+.routes a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.search {
+    padding: 15px;
+}
+
+.search button {
+    border-radius: 10px;
+    color: red;
+    border-color: red;
+}
