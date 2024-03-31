@@ -1,0 +1,128 @@
+
+body{
+	margin: 0;
+	font-weight: 250;
+	font-style: normal;
+	background-color: #ffffff;
+}
+
+p {
+	font-size: 14px;
+	color: #000000;
+}
+
+strong {
+	color: #000000;
+}
+
+h1 {
+	font-size: 20px;
+	margin: 3px 0;
+}
+
+.big{
+	font-size: 20px;
+	margin: 3px 0;
+}
+
+.small{
+	font-size: 14px;
+	margin: 2.5px 0;
+}
+
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	gap: 20px;
+	background-color: #fff;
+	padding: 40px;
+	height: 100vh;
+}
+
+.images{
+	max-width: 550px;
+}
+
+.image-full {
+	width: 100%;
+	height: auto;
+}
+
+.thumbnail-images{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+	gap: 20px;
+}
+
+button {
+	color: #ffffff;
+	background-color: #0f2c6b;
+	border: none;
+	padding: 1rem 2.5rem;
+	border-radius: 4px;
+	font-weight: 250;
+}
+
+.purchase{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 15px;
+	margin: 25px 0;
+}
+
+@media (min-width: 650px) and (max-width: 950px) {
+  button {
+		background-color: #34c920;
+		width: 100%;
+	}
+
+	.purchase {
+		flex-direction: column;
+    align-items: flex-start;
+	}
+
+	.container{
+		padding: 45px 25px;
+	}
+
+	.thumbnail-images{
+		gap: 2px;
+	}
+
+	.images{
+		max-width: 415px;
+	}
+
+}
+
+@media (min-width: 0px) and (max-width: 650px) {
+  button {
+		background-color: #ded638;
+		width: 100%;
+		color: #000;
+	}
+
+	.thumbnail-images{
+		display: none;
+	}
+
+	.image-full{
+		width: 100%;
+	}
+
+	.big{
+		text-align: center;
+	}
+
+	.purchase {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+}
